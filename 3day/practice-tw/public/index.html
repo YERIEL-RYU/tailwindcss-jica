@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth hover:scroll-auto">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Utility First</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <div class="container mx-auto px-4 bg-blue-200 sm:bg-violet-200 md:bg-orange-200 lg:bg-emerald-200 h-screen">
+    <h1 class="bg-yellow-400 w-2/3 text-2xl hover:text-red-900 dark:text-white dark:bg-black">Tailwind CSS</h1>
+    <h2 class="font-melody text-xl p-4 w-1/2 bg-amber-200 rounded m-4">Utility First, 유틸리티 퍼스트</h2>
+    <div class="w-1/2 h-6 rounded-t-md bg-slate-500 text-white px-4 mb-4">rounded test</div>
+
+    <div class="gap-4 flex flex-wrap lg:w-[900px] justify-between mb-4">
+      <div class="border-red-500 border-2 w-1/3 p-2">box 1</div>
+      <div class="border-purple-900 border-2 w-1/3 p-2">box 2</div>
+      <div class="border-orange-900 border-2 w-1/3 p-2">box 3</div>
+      <div class="border-blue-900 border-2 w-1/3 p-2">box 4</div>
+    </div>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 mb-6">
+      <figure class="h-20 bg-slate-500 justify-self-auto">A</figure>
+      <figure class="h-20 bg-slate-600 drop-shadow-md shadow-red-300">B</figure>
+      <figure class="col-span-2 h-20 bg-slate-700 shadow-lg shadow-black">C</figure>
+    </div>
+
+    <div class="after:content-['*'] after:ml-0.5 after:text-red-500 block ">가상 요소 선택자를 사용하여 박스 생성하기</div>
+  </div>
+</body>
+</html>
